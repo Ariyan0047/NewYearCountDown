@@ -1,0 +1,149 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+body main {
+  height: 100vh;
+  width: 100vw;
+}
+
+body main .mainContainer {
+  height: 100%;
+  width: 100%;
+  background-image: url("../IMG/bckgrdImage.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body main .mainContainer .container {
+  height: 100%;
+  font-size: 1.4rem;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+}
+
+body main .mainContainer .container .countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .mainContainer .container .countdown .days {
+  padding: 1rem;
+}
+
+body main .mainContainer .container .countdown .hours {
+  padding: 1rem;
+}
+
+body main .mainContainer .container .countdown .minutes {
+  padding: 1rem;
+}
+
+body main .mainContainer .container .countdown .seconds {
+  padding: 1rem;
+}
+
+body main .mainContainer .container .year {
+  margin: 4rem 0 -16rem 0;
+  font-size: 8rem;
+  opacity: 0.2;
+}
+
+body main:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.container * {
+  z-index: 1;
+}
+
+@media only screen and (max-width: 500px) {
+  body main .mainContainer .container {
+    font-size: 1rem;
+  }
+  body main .mainContainer .container .title {
+    font-size: 1.4rem;
+  }
+  body main .mainContainer .container .countdown .days {
+    padding: 0.6rem;
+  }
+  body main .mainContainer .container .countdown .hours {
+    padding: 0.6rem;
+  }
+  body main .mainContainer .container .countdown .minutes {
+    padding: 0.6rem;
+  }
+  body main .mainContainer .container .countdown .seconds {
+    padding: 0.6rem;
+  }
+  body main .mainContainer .container .year {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  body main .mainContainer .container {
+    font-size: 1rem;
+  }
+  body main .mainContainer .container .title {
+    font-size: 1.4rem;
+  }
+  body main .mainContainer .container .countdown .days {
+    padding: 0.4rem;
+  }
+  body main .mainContainer .container .countdown .hours {
+    padding: 0.4rem;
+  }
+  body main .mainContainer .container .countdown .minutes {
+    padding: 0.4rem;
+  }
+  body main .mainContainer .container .countdown .seconds {
+    padding: 0.4rem;
+  }
+  body main .mainContainer .container .year {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body main .mainContainer .container .year {
+    margin: 4rem 0 -12rem 0;
+    font-size: 6rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
